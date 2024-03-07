@@ -18,6 +18,11 @@ Proyek ini menggunakan beberapa library Python yang umum dalam pengembangan mach
 - `PIL`
 
 ## Cara Menjalankan Dashboard
-Untuk menjalankan dashboard, pastikan Anda telah menginstal Streamlit dan dependencies lainnya. Kemudian jalankan perintah berikut di terminal Anda:
+Untuk menjalankan dashboard, pastikan Anda telah menginstal Streamlit dan dependencies lainnya. 
+Buka link berikut:
+
+https://bathis-ds-dasboard.streamlit.app/
+
+Atau jalankan perintah berikut di terminal Anda:
 ```bash
 streamlit run Dashboard.py
