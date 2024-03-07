@@ -1,7 +1,3 @@
-!pip install matplotlib
-!pip install pandas
-!pip install pillow
-
 import streamlit as st
 import pandas as pd
 import re
