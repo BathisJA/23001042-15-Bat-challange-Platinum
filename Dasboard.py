@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import re
-import matplotlib.pyplot as plt
 from PIL import Image
 
 # Load datasets
@@ -74,7 +73,7 @@ st.sidebar.header('Detail Dataset')
 st.sidebar.markdown('Ini adalah detail mengenai dataset yang digunakan unutk melakukan training pada Machine Learning')
 
 st.sidebar.subheader('Null Values')
-st.sidebar.write(df_train.isnull().sum().rename_axis('Label').reset_index(name='Jumlah'), index=False)
+st.sidebar.write(df_train.isnull().sum().rename_axis('Label').reset_index(name='Jumlah'))
 
 st.sidebar.subheader('Duplicate Values')
 st.sidebar.write("Data duplikat:", df_train.duplicated().sum())
