@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+
+<body>
+    <div class="title">Input Page</div>
+    <div class="container">
+        <div class="card card-input input-card">
+            <div class="card-title">Input</div>
+
+            <!-- Text NN Form -->
+            <div class="form-group">
+                <label for="textNN">NN Text:</label>
+                <input type="text" id="textNN" name="textNN">
+                <button type="button" onclick="submitTextForm('textNN', 'NN')">Submit</button>
+            </div>
+
+            <!-- File NN Form -->
+            <div class="form-group">
+                <label for="fileNN">NN File:</label>
+                <input type="file" id="fileNN" name="fileNN">
+                <button type="button" onclick="submitFileForm('fileNN', 'NN')">Submit</button>
+            </div>
+
+             <!-- LSTM Text Form -->
+             <div class="form-group">
+                <label for="LSTMText">LSTM Text:</label>
+                <input type="text" id="LSTMText" name="LSTMText">
+                <button type="button" onclick="submitTextForm('LSTMText', 'LSTM')">Submit</button>
+            </div>
+
+            <!-- LSTM File Form -->
+            <div class="form-group">
+                <label for="LSTMFile">LSTM File:</label>
+                <input type="file" id="LSTMFile" name="LSTMFile">
+                <button type="button" onclick="submitFileForm('LSTMFile', 'LSTM')">Submit</button>
+            </div>
+        </div>
+        <div class="card card-output">
+            <div class="card-title">Output</div>
+            <div class="output-container">
+                <div id="responseTitle"></div>
+                <div id="responseStatus"></div>
+                <table class="output-table" id="outputTable" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Cleansed Text</th>
+                            <th>Sentimen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="outputBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <button class="reset-button" onclick="resetOutput()">Reset</button>
+        </div>
+    </div>
+    <script src="/templates/input.js"></script>
+</body>
+</html>
