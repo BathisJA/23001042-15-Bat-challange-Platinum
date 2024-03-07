@@ -14,7 +14,6 @@ Proyek ini menggunakan beberapa library Python yang umum dalam pengembangan mach
 - `streamlit`
 - `pandas`
 - `re`
-- `matplotlib.pyplot`
 - `PIL`
 
 ## Cara Menjalankan Dashboard
