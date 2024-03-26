@@ -112,7 +112,7 @@ st.image(image_3, use_column_width=True)
 st.write("Ini menunjukan kata-kata kasar yang sering digunakan dalam dataset.")
 
 
-st.subheader('Word Cloud Kata Kasar')
+st.subheader('Word Cloud Kata Alay')
 image_4 = Image.open('Templates/wordcloude_alay.png')
 st.image(image_4, use_column_width=True)
 st.write("Ini menunjukan kata-kata alay yang sering digunakan dalam dataset.")
